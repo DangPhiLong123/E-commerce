@@ -18,9 +18,12 @@ var userSchema = new mongoose.Schema({
         required:true,
         unique:true,
     },
+    avatar: {
+        type: String,
+    },
     mobile:{
         type:String,
-        required:true,
+        required: true,
         unique:true,
     },
     password:{
@@ -29,13 +32,18 @@ var userSchema = new mongoose.Schema({
     },
     role:{
         type:String,
-        default: 'user',
+        enum: [1223, 2003],
+        default: 2003,
     },
-    cart: {
+    cart: [{
+        product: {type: mongoose.Types.ObjectId, ref: 'Product'},
+        quantity: Number,
+        color: String
+    }],
+    address: {
         type: Array,
         default: []
     },
-    address: [{type: mongoose.Types.ObjectId, ref: 'Address'}],
     wishlist: [{type: mongoose.Types.ObjectId, ref: 'Product'}],
     isBlocked: {
         type:Boolean,
@@ -51,6 +59,9 @@ var userSchema = new mongoose.Schema({
         type: String,
     },
     passwordResetExpires: {
+        type: String,
+    },
+    registerToken: {
         type: String,
     },
 },  {

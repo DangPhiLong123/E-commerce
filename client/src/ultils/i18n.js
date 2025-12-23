@@ -1,0 +1,175 @@
+const translations = {
+  en: {
+    common: {
+      home: 'HOME',
+      products: 'PRODUCTS',
+      blogs: 'BLOGS',
+      our_services: 'OUR SERVICES',
+      faqs: 'FAQs',
+      newsletter_title: 'Subscribe to our newsletter',
+      newsletter_sub: 'Get all the latest information on Events, Sales and Offers.',
+      new_arrivals: 'NEW ARRIVALS',
+      hot_collections: 'HOT COLLECTIONS',
+      daily_deals: 'DAILY DEALS',
+      featured_products: 'FEATURED PRODUCTS',
+      best_seller: 'BEST SELLER',
+      new_arrivals_tab: 'NEW ARRIVALS',
+      tablet_tab: 'TABLET',
+      all: 'All',
+      smartphone: 'Smartphone',
+      tablet: 'Tablet',
+      laptop: 'Laptop',
+      accessories: 'Accessories',
+      television: 'Television',
+      printer: 'Printer',
+      camera: 'Camera',
+      speaker: 'Speaker',
+      blog_post: 'BLOG POSTS',
+      our_services: 'OUR SERVICES',
+      options: 'OPTIONS',
+      hot: 'HOT',
+      new: 'NEW',
+      quick_view: 'Quick View',
+      more_options: 'More Options',
+      add_to_wishlist: 'Add to Wishlist',
+      remove_from_wishlist: 'Remove from Wishlist',
+      hours: 'Hours',
+      minutes: 'Minutes',
+      seconds: 'Seconds',
+      no_products_available: 'No products available',
+      no_description_available: 'No description available',
+      no_products_in_category: 'No products available in this category',
+      fast_delivery: 'Fast Delivery',
+      flexible_payment: 'Flexible Payment',
+      genuine_warranty: 'Genuine Warranty',
+      support_24_7: '24/7 Support',
+      view_more_services: 'VIEW MORE SERVICES',
+      fast_delivery_desc: 'Support nationwide delivery, ensure products reach your hands safely and on time',
+      flexible_payment_desc: 'Accept many forms: COD, bank transfer, e-wallet, credit card',
+      genuine_warranty_desc: 'Commit 100% genuine products, with transparent warranty from the manufacturer',
+      support_24_7_desc: 'Our customer service team is always ready to advise and answer all your questions',
+      faqs_title: 'FAQs',
+      faq_q1: 'How can I pay?',
+      faq_a1: 'We support COD, credit card, bank transfer, and e-wallets (Momo, ZaloPay...)',
+      faq_q2: 'How long does delivery take?',
+      faq_a2: 'Usually 2-3 business days depending on the area. For inner Hanoi & HCMC, delivery can be within 24h.',
+      faq_q3: 'Is the product genuine?',
+      faq_a3: 'All products are genuine, come with a VAT invoice and manufacturer\'s warranty.',
+      faq_q4: 'What if the product is faulty?',
+      faq_a4: 'You can contact customer service within 7 days for a replacement or warranty claim.'
+    },
+    nav: {
+      home: 'HOME',
+      products: 'PRODUCTS',
+      blogs: 'BLOGS',
+      our_services: 'OUR SERVICES',
+      faqs: 'FAQs'
+    },
+    auth: {
+      login: 'LOGIN',
+      register: 'REGISTER',
+      forgot_account: 'Forgot Password?',
+      create_account: 'Create Account',
+      go_login: 'Already have an account? Login',
+      go_home: 'Go Home',
+      enter_email: 'Enter your email',
+      email_placeholder: 'Email',
+      back: 'Back',
+      submit: 'Submit'
+    }
+  },
+  vi: {
+    common: {
+      home: 'TRANG CHỦ',
+      products: 'SẢN PHẨM',
+      blogs: 'BÀI VIẾT',
+      our_services: 'DỊCH VỤ CỦA CHÚNG TÔI',
+      faqs: 'CÂU HỎI THƯỜNG GẶP',
+      newsletter_title: 'Đăng ký nhận tin tức',
+      newsletter_sub: 'Nhận tất cả thông tin mới nhất về Sự kiện, Khuyến mãi và Ưu đãi.',
+      new_arrivals: 'SẢN PHẨM MỚI',
+      hot_collections: 'BỘ SƯU TẬP HOT',
+      daily_deals: 'DEAL HÀNG NGÀY',
+      featured_products: 'SẢN PHẨM NỔI BẬT',
+      best_seller: 'BÁN CHẠY NHẤT',
+      new_arrivals_tab: 'SẢN PHẨM MỚI',
+      tablet_tab: 'MÁY TÍNH BẢNG',
+      all: 'Tất cả',
+      smartphone: 'Điện thoại',
+      tablet: 'Máy tính bảng',
+      laptop: 'Laptop',
+      accessories: 'Phụ kiện',
+      television: 'Tivi',
+      printer: 'Máy in',
+      camera: 'Máy ảnh',
+      speaker: 'Loa',
+      blog_post: 'BÀI VIẾT BLOG',
+      our_services: 'DỊCH VỤ CỦA CHÚNG TÔI',
+      options: 'TÙY CHỌN',
+      hot: 'HOT',
+      new: 'MỚI',
+      quick_view: 'Xem nhanh',
+      more_options: 'Thêm tùy chọn',
+      add_to_wishlist: 'Thêm vào yêu thích',
+      remove_from_wishlist: 'Xóa khỏi yêu thích',
+      hours: 'Giờ',
+      minutes: 'Phút',
+      seconds: 'Giây',
+      no_products_available: 'Không có sản phẩm nào',
+      no_description_available: 'Không có mô tả',
+      no_products_in_category: 'Không có sản phẩm nào trong danh mục này',
+      fast_delivery: 'Giao hàng nhanh chóng',
+      flexible_payment: 'Thanh toán linh hoạt',
+      genuine_warranty: 'Bảo hành chính hãng',
+      support_24_7: 'Hỗ trợ 24/7',
+      view_more_services: 'XEM THÊM DỊCH VỤ',
+      fast_delivery_desc: 'Hỗ trợ giao hàng toàn quốc, đảm bảo sản phẩm đến tay bạn an toàn và đúng hẹn',
+      flexible_payment_desc: 'Chấp nhận nhiều hình thức: COD, chuyển khoản, ví điện tử, thẻ tín dụng',
+      genuine_warranty_desc: 'Cam kết 100% sản phẩm chính hãng, kèm bảo hành minh bạch từ nhà sản xuất',
+      support_24_7_desc: 'Đội ngũ CSKH luôn sẵn sàng tư vấn và giải đáp mọi thắc mắc của bạn',
+      faqs_title: 'CÂU HỎI THƯỜNG GẶP',
+      faq_q1: 'Tôi có thể thanh toán bằng cách nào?',
+      faq_a1: 'Chúng tôi hỗ trợ COD, thẻ tín dụng, chuyển khoản ngân hàng và ví điện tử (Momo, ZaloPay...)',
+      faq_q2: 'Thời gian giao hàng bao lâu?',
+      faq_a2: 'Thông thường 2-3 ngày làm việc tùy khu vực. Với nội thành Hà Nội & TP.HCM, có thể giao trong 24h.',
+      faq_q3: 'Sản phẩm có phải là hàng chính hãng không?',
+      faq_a3: 'Tất cả sản phẩm đều là hàng chính hãng, đi kèm hóa đơn VAT và bảo hành từ nhà sản xuất.',
+      faq_q4: 'Nếu sản phẩm lỗi tôi phải làm sao?',
+      faq_a4: 'Bạn có thể liên hệ bộ phận CSKH trong vòng 7 ngày để được đổi mới hoặc gửi bảo hành.'
+    },
+    nav: {
+      home: 'TRANG CHỦ',
+      products: 'SẢN PHẨM',
+      blogs: 'BÀI VIẾT',
+      our_services: 'DỊCH VỤ CỦA CHÚNG TÔI',
+      faqs: 'CÂU HỎI THƯỜNG GẶP'
+    },
+    auth: {
+      login: 'ĐĂNG NHẬP',
+      register: 'ĐĂNG KÝ',
+      forgot_account: 'Quên mật khẩu?',
+      create_account: 'Tạo tài khoản',
+      go_login: 'Đã có tài khoản? Đăng nhập',
+      go_home: 'Về trang chủ',
+      enter_email: 'Nhập email của bạn',
+      email_placeholder: 'Email',
+      back: 'Quay lại',
+      submit: 'Gửi'
+    }
+  }
+};
+
+export const translate = (lang, key) => {
+  const keys = key.split('.');
+  let result = translations[lang];
+  
+  for (const k of keys) {
+    if (result && typeof result === 'object') {
+      result = result[k];
+    } else {
+      return key; // Return the key if translation not found
+    }
+  }
+  
+  return result || key;
+};

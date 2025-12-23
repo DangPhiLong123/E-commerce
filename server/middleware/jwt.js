@@ -7,5 +7,4 @@ const generateRefreshToken = (uid) => jwt.sign({_id: uid}, process.env.JWT_SECRE
 module.exports = {
     generateAccessToken,
     generateRefreshToken
-
 }
